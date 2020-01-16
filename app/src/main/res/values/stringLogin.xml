@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Password</string>
+    <string name="login_btn">Log In</string>
+    <string name="login_or_text">Or</string>
+    <string name="login_signup_btn">Sign Up</string>
+    <string name="login_dialog_otp">Insert OTP</string>
+    <string name="login_dialog_btn">Send</string>
+</resources>

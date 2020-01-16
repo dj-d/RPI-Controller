@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s2_hint">Da definire</string>
+
+    <string name="s2_switch_1">Switch 1</string>
+    <string name="s2_switch_2">Switch 2</string>
+    <string name="s2_switch_3">Switch 3</string>
+    <string name="s2_switch_4">Switch 4</string>
+
+    <string name="s2_dialog_btn_send">Send</string>
+    <string name="s2_dialog_btn_cancel">Cancel</string>
+
+    <string name="s2_menu_edit_button">Change name</string>
+</resources>

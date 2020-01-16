@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_3"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_4"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_5"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_6"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_7"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps1_switch_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s1_switch_8"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/dialog_ps1_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s1_dialog_btn_send" />
+
+    <Button
+        android:id="@+id/dialog_ps1_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s1_dialog_btn_cancel" />
+
+</LinearLayout>

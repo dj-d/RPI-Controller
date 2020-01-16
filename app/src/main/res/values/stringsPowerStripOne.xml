@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s1_hint">Da definire</string>
+
+    <string name="s1_switch_1">Switch 1</string>
+    <string name="s1_switch_2">Switch 2</string>
+    <string name="s1_switch_3">Switch 3</string>
+    <string name="s1_switch_4">Switch 4</string>
+    <string name="s1_switch_5">Switch 5</string>
+    <string name="s1_switch_6">Switch 6</string>
+    <string name="s1_switch_7">Switch 7</string>
+    <string name="s1_switch_8">Switch 8</string>
+
+    <string name="s1_dialog_btn_send">Send</string>
+    <string name="s1_dialog_btn_cancel">Cancel</string>
+
+    <string name="s1_menu_edit_button">Change name</string>
+</resources>

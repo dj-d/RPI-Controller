@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_power_btn">Power button</string>
+    <string name="tv_input_btn">TV Input</string>
+    <string name="tv_program_icon">P</string>
+    <string name="tv_ok_btn">OK</string>
+    <string name="tv_back_btn">Back</string>
+    <string name="tv_setting_btn">TV Settings</string>
+    <string name="tv_vol_icon">TV Volume icon</string>
+    <string name="tv_vol_mute">TV Volume mute</string>
+    <string name="tv_arrow_up">TV Arrow UP</string>
+    <string name="tv_arrow_down">TV Arrow DOWN</string>
+    <string name="tv_arrow_left">TV Arrow LEFT</string>
+    <string name="tv_arrow_right">TV Arrow RIGHT</string>
+    <string name="plus_btn">Plus button</string>
+    <string name="minus_btn">Minus button</string>
+
+    <string name="tv_soundbar_section">SOUNDBAR</string>
+</resources>

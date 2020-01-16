@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.controller.SoundBarFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_soundbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/soundbar_nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/sound_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/sound_power_btn"
+                        android:src="@drawable/ic_tv_soundbar_power"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/sound_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="100dp"
+                        android:contentDescription="@string/sound_display"
+                        android:src="@drawable/ic_soundbar_display"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/sound_vol_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/sound_arrow_up"
+                        android:src="@drawable/ic_soundbar_arrow_up"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_on" />
+
+                    <ImageView
+                        android:id="@+id/sound_vol_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/sound_vol_icon"
+                        android:src="@drawable/ic_tv_soundbar_volume"
+                        app:layout_constraintBottom_toTopOf="@+id/sound_vol_down"
+                        app:layout_constraintEnd_toEndOf="@+id/sound_vol_up"
+                        app:layout_constraintStart_toStartOf="@+id/sound_vol_up"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_vol_up" />
+
+                    <ImageButton
+                        android:id="@+id/sound_vol_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="100dp"
+                        android:contentDescription="@string/sound_arrow_down"
+                        android:src="@drawable/ic_soundbar_arrow_down"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_vol_up" />
+
+                    <ImageButton
+                        android:id="@+id/sound_track_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:contentDescription="@string/sound_arrow_up"
+                        android:src="@drawable/ic_soundbar_arrow_up"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_display" />
+
+                    <TextView
+                        android:id="@+id/sound_track_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sound_track"
+                        app:layout_constraintBottom_toTopOf="@+id/sound_track_previous"
+                        app:layout_constraintEnd_toEndOf="@+id/sound_track_next"
+                        app:layout_constraintStart_toStartOf="@+id/sound_track_next"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_track_next" />
+
+                    <ImageButton
+                        android:id="@+id/sound_track_previous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginEnd="30dp"
+                        android:contentDescription="@string/sound_arrow_down"
+                        android:src="@drawable/ic_soundbar_arrow_down"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_track_next" />
+
+                    <ImageButton
+                        android:id="@+id/sound_play_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/sound_play_pause_btn"
+                        android:src="@drawable/ic_soundbar_play"
+                        app:layout_constraintEnd_toStartOf="@+id/sound_stop"
+                        app:layout_constraintStart_toEndOf="@+id/sound_vol_up"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_vol_up" />
+
+                    <ImageButton
+                        android:id="@+id/sound_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="52dp"
+                        android:contentDescription="@string/sound_stop_btn"
+                        android:src="@drawable/ic_soundbar_stop"
+                        app:layout_constraintEnd_toStartOf="@+id/sound_track_next"
+                        app:layout_constraintTop_toTopOf="@+id/sound_play_pause" />
+
+                    <ImageButton
+                        android:id="@+id/sound_treble_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/sound_minus_btn"
+                        android:src="@drawable/ic_tv_soundbar_minus"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_vol_down" />
+
+                    <TextView
+                        android:id="@+id/sound_treble_text"
+                        android:layout_width="58dp"
+                        android:layout_height="15dp"
+                        android:gravity="center"
+                        android:text="@string/sound_treble"
+                        app:layout_constraintBottom_toBottomOf="@+id/sound_treble_down"
+                        app:layout_constraintEnd_toStartOf="@+id/sound_treble_up"
+                        app:layout_constraintStart_toEndOf="@+id/sound_treble_down"
+                        app:layout_constraintTop_toTopOf="@+id/sound_treble_down" />
+
+                    <ImageButton
+                        android:id="@+id/sound_treble_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:contentDescription="@string/sound_plus_btn"
+                        android:src="@drawable/ic_tv_soundbar_plus"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_track_previous" />
+
+                    <ImageButton
+                        android:id="@+id/sound_bass_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/sound_minus_btn"
+                        android:src="@drawable/ic_tv_soundbar_minus"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_treble_down" />
+
+                    <TextView
+                        android:id="@+id/sound_bass_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sound_bass"
+                        app:layout_constraintBottom_toBottomOf="@+id/sound_bass_up"
+                        app:layout_constraintEnd_toStartOf="@+id/sound_bass_up"
+                        app:layout_constraintStart_toEndOf="@+id/sound_bass_down"
+                        app:layout_constraintTop_toTopOf="@+id/sound_bass_up" />
+
+                    <ImageButton
+                        android:id="@+id/sound_bass_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:contentDescription="@string/sound_plus_btn"
+                        android:src="@drawable/ic_tv_soundbar_plus"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_treble_up" />
+
+                    <TextView
+                        android:id="@+id/sound_input"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="@string/sound_input"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_bass_down" />
+
+                    <Spinner
+                        android:id="@+id/sound_input_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/sound_input"
+                        app:layout_constraintStart_toEndOf="@+id/sound_input"
+                        app:layout_constraintTop_toTopOf="@+id/sound_input"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/sound_eq"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="@string/sound_eq"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_input" />
+
+                    <Spinner
+                        android:id="@+id/sound_eq_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/sound_eq"
+                        app:layout_constraintStart_toEndOf="@+id/sound_eq"
+                        app:layout_constraintTop_toTopOf="@+id/sound_eq" />
+
+                    <ImageButton
+                        android:id="@+id/sound_mute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/sound_mute_btn"
+                        android:src="@drawable/ic_tv_soundbar_volume_mute"
+                        app:layout_constraintStart_toEndOf="@+id/sound_vol_down"
+                        app:layout_constraintTop_toBottomOf="@+id/sound_play_pause" />
+
+                    <ImageButton
+                        android:id="@+id/sound_loop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/sound_loop_btn"
+                        android:src="@drawable/ic_soundbar_loop"
+                        app:layout_constraintBottom_toBottomOf="@+id/sound_mute"
+                        app:layout_constraintEnd_toEndOf="@+id/sound_stop"
+                        app:layout_constraintStart_toStartOf="@+id/sound_stop"
+                        app:layout_constraintTop_toTopOf="@+id/sound_mute" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

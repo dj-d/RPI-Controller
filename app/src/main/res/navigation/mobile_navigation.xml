@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.e.rpi_controller.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_controller"
+        android:name="com.e.rpi_controller.ui.controller.ControllerFragment"
+        android:label="@string/menu_controller"
+        tools:layout="@layout/fragment_controller" />
+
+    <fragment
+        android:id="@+id/nav_nas"
+        android:name="com.e.rpi_controller.ui.nas.NasFragment"
+        android:label="@string/menu_nas"
+        tools:layout="@layout/fragment_nas" />
+
+    <fragment
+        android:id="@+id/nav_octoprint"
+        android:name="com.e.rpi_controller.ui.octoprint.OctoPrintFragment"
+        android:label="@string/menu_octoprint"
+        tools:layout="@layout/fragment_octoprint" />
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="RGB_switch_control">SECTOR</string>
+
+    <string name="rgb_hint">Da definire</string>
+
+    <string name="rgb_switch_1">Switch 1</string>
+    <string name="rgb_switch_2">Switch 2</string>
+    <string name="rgb_switch_3">Switch 3</string>
+
+    <string name="rgb_dialog_btn_send">Send</string>
+    <string name="rgb_dialog_btn_cancel">Cancel</string>
+
+    <string name="rgb_menu_edit_button">Change name</string>
+
+    <string name="RGB_color_selector">COLOR SELECTOR</string>
+    <string name="RGB_red">RED</string>
+    <string name="RGB_green">GREEN</string>
+    <string name="RGB_blue">BLUE</string>
+    <string name="RGB_initial_red_value">0</string>
+    <string name="RGB_initial_green_value">0</string>
+    <string name="RGB_initial_blue_value">0</string>
+</resources>

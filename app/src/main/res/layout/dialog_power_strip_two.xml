@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dialog_ps2_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s2_switch_1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps2_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s2_switch_2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps2_switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s2_switch_3"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_ps2_switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/s2_switch_4"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/dialog_ps2_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s2_dialog_btn_send" />
+
+    <Button
+        android:id="@+id/dialog_ps2_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s2_dialog_btn_cancel" />
+</LinearLayout>

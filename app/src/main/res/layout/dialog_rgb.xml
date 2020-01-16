@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/dialog_rgb_switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/rgb_switch_1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_rgb_switch_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/rgb_switch_2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dialog_rgb_switch_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/rgb_switch_3"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/dialog_rgb_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rgb_dialog_btn_send" />
+
+    <Button
+        android:id="@+id/dialog_rgb_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rgb_dialog_btn_cancel" />
+
+</LinearLayout>
